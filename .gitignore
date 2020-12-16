@@ -1,1 +1,5 @@
 *.suo
+bin
+obj
+.txt
+*.csproj.user

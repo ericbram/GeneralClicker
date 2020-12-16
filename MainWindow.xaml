@@ -27,11 +27,12 @@
             </StackPanel>
             <Grid Grid.Row="1" Height="30px">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="120" />
+                    <ColumnDefinition Width="5*" />
                     <ColumnDefinition Width="*" />
-                    <ColumnDefinition />
+                    <ColumnDefinition Width="5*" />
                 </Grid.ColumnDefinitions>
-                <Button Name="btnUpdate"  Click="btnUpdate_Click" Grid.ColumnSpan="3">Update</Button>
+                <Button Name="btnUpdate"  Click="btnUpdate_Click">Update</Button>
+                <CheckBox Grid.Column="2" Name="chkAutoDelay" Foreground="White" HorizontalAlignment="Center" HorizontalContentAlignment="Center" Height="16" IsChecked="True">Auto Delay Add</CheckBox>
             </Grid>
             <Grid Grid.Row="2" Height="30px">
                 <Grid.ColumnDefinitions>

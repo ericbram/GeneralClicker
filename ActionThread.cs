@@ -83,7 +83,7 @@ namespace GeneralClicker
                     string value = line.Substring(ind).Trim();
                     switch (action)
                     {
-                        case "MOUSEMOVE":
+                        case "MOVE":
                             Point m = Point.Parse(value);
                             DoMouseMove(m);
                             break;

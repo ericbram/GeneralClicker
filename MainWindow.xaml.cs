@@ -146,6 +146,10 @@ namespace GeneralClicker
             if (e.Key == Key.P && isActive)
             {
                 clicks.Add(GetMousePositionWindowsForms());
+                if ((bool)chkAutoDelay.IsChecked)
+                {
+                    clicks.Add(new Point(-10000, -10000));
+                }
             }
             else if (e.Key == Key.O && isActive)
             {
